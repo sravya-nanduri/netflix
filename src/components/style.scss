@@ -1,0 +1,415 @@
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: rgb(10, 10, 10);
+  color: #fff;
+}
+.header_active {
+  background-color: transparent;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  position: fixed;
+  width: 100%;
+  height: 5px;
+  z-index: 1;
+}
+.header {
+  background-color: #111;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  position: fixed;
+  width: 100%;
+  height: 5px;
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  .header {
+    display: none;
+  }
+  .header_active {
+    display: none;
+  }
+}
+.header_logo img {
+  width: 100px;
+}
+.header_links {
+  display: flex;
+  gap: 2rem;
+  margin-left: 4%;
+  width: 700px;
+}
+.header_links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.header_profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5%;
+}
+.cards {
+  display: flex;
+  width: 95vw;
+  height: 16vw;
+  align-items: center;
+  overflow-x: scroll;
+  margin-top: -3%;
+  overflow-y: hidden;
+  margin-left: 20px;
+  border: 2px border white;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.indcard {
+  width: 238px;
+  height: 7rem;
+  margin-right: 10px;
+}
+.cards img {
+  width: 238px;
+  height: 130px;
+  margin-top: 0%;
+  border-radius: 2%;
+}
+.movie-banner {
+  height: 100vh;
+  background-size: cover;
+  background-image: url("./Images/kungfu.jpg");
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+}
+.header_profile_dropdown {
+  margin-top: 1%;
+  height: 30px;
+  padding-right: 90px;
+  cursor: pointer;
+}
+.header_profile_dropdown {
+  .Options {
+    display: none;
+  }
+  .span {
+    padding: 10px;
+  }
+  &:hover {
+    .Options {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      font-size: 1vw;
+      background-color: #111;
+    }
+  }
+}
+.movie-banner {
+  height: 100vh;
+  background-size: cover;
+  background-image: url("./Images/kungfu.jpg");
+  display: flex;
+  flex-direction: column;
+}
+.movie-banner_description {
+  width: 30%;
+  margin-right: 63.5%;
+  height: fit-content;
+  font-size: 1.2vw;
+  color: rgb(231, 223, 223);
+}
+.movie-banner_img {
+  height: 5vw;
+  width: 12vw;
+  margin-top: 15%;
+  padding-bottom: 1.5%;
+  margin-right: 81%;
+}
+.Playbutton {
+  margin-right: 82%;
+  padding-top: 15px;
+  display: flex;
+}
+.Playbutton_play {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  width: 6vw;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1vw;
+  font-weight: 500;
+  margin-right: 7%;
+  height: 2.5vw;
+  cursor: pointer;
+}
+.Playbutton_moreinfo {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1vw;
+  font-weight: 500;
+  width: 6vw;
+  height: 2.5vw;
+  gap: 5px;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1vw;
+    font-weight: 500;
+    width: 6vw;
+    height: 2.5vw;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+  }
+}
+.header_icons {
+  display: flex;
+  gap: 10px;
+  margin-left: 90px;
+}
+.header_onlyicons {
+  display: flex;
+  align-items: center;
+}
+.header_onlyicons div:nth-child(2) {
+  margin: 0 20px 0 19px;
+}
+.header_onlyicons div:nth-child(1) {
+  margin: 0 20px 0 0;
+}
+.footer {
+  background-color: #111;
+  color: #757575;
+  padding: 20px;
+  text-align: center;
+  margin-top: 5%;
+}
+.footer_social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.footer_icon {
+  font-size: 24px;
+  color: #757575;
+  cursor: pointer;
+}
+.footer_links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.footer_links a {
+  text-decoration: none;
+  color: #757575;
+  font-size: 14px;
+}
+.footer_service {
+  margin-bottom: 40px;
+}
+.footer_corp p {
+  font-size: 12px;
+}
+.header_icons {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 5%;
+}
+.header_inputsearch {
+  width: 0;
+  opacity: 0;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: antiquewhite;
+  transition: width 0.3s ease, opacity 0.3s ease;
+}
+.header_icons.search-open .header_inputsearch {
+  width: 150px;
+  opacity: 1;
+  margin-right: 30px;
+}
+
+.header_inputsearch_hidden {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.sliderArrow {
+  width: 50px;
+  background-color: transparent;
+  color: white;
+  position: absolute;
+  cursor: pointer;
+  &.left {
+    left: 0;
+    margin-top: 7vw;
+  }
+  &.right {
+    right: 0;
+    margin-top: 7vw;
+  }
+}
+.container1 {
+  display: flex;
+  width: max-content;
+  transition: transform 0.01s ease-in-out;
+}
+.card-container:hover {
+  position: relative;
+  border: 2px border white;
+}
+.indcard :hover {
+  transition: transform 0.1s ease-in-out;
+}
+.card-container:hover .indcard {
+  transform: scale(1.1, 2);
+  border-radius: 5%;
+  background-color: rgb(39, 37, 37);
+  transition: 1s;
+}
+.hover-content {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: none;
+  top: 49%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.card-container:hover .hover-content {
+  display: block;
+  opacity: 1;
+}
+.card-container:hover .movie_img {
+  height: 50px;
+  width: 238px;
+  margin-bottom: 2%;
+}
+.card-container:hover {
+  .card_playbutton {
+    border-radius: 50%;
+    margin-right: 3%;
+    border: none;
+    padding-top:2%;
+  }
+}
+.card-container:hover {
+  .card_addlist {
+    border-radius: 50%;
+    margin-right: 3%;
+    border: none;
+    background-color: transparent;
+    color: white;
+  }
+}
+.card_like {
+  position: relative;
+}
+
+.card_like__moreoptions {
+  position: absolute;
+  right: 0;
+  background-color: #6b6565;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  border-radius: 4px;
+  display: none;
+  color: rgb(255, 255, 255);
+
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card_like:hover .card_like__moreoptions {
+  display: block;
+  display: flex;
+  margin-top: -88%;
+  gap: 10px;
+  margin-right: -102%;
+  opacity: 1;
+}
+.card-container:hover {
+  .card_like {
+    border-radius: 50%;
+    margin-right: -26%;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    color: white;
+  }
+}
+.card-container:hover {
+  .card_dropdown {
+    border-radius: 50%;
+    margin-left: 56%;
+    border: none;
+    background-color: transparent;
+    color: white;
+  }
+}
+.card-container:hover {
+  .card_Match {
+    font-size: 1vw;
+    color: green;
+    top: 5%;
+    margin-right: 3%;
+  }
+}
+.card-container:hover {
+  .card_UA {
+    font-size: 1vw;
+    color: grey;
+  }
+}
+.card-container:hover {
+  .card_duration {
+    font-size: 1vw;
+    margin-right: 3%;
+    color: grey;
+    display: inline;
+  }
+}
+.card-container:hover {
+  .unordered {
+    margin-top: 0%;
+    margin-left: 0%;
+    padding-left: 0;
+    display: flex;
+    gap: 10%;
+  }
+}
+.card-container:hover {
+  .rating {
+    font-size: 1vw;
+    color: #757575;
+  }
+}

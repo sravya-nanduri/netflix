@@ -1,0 +1,128 @@
+$color_1: white;
+$color_2: brown;
+$color_3: green;
+$color_4: grey;
+$color_5: #757575;
+$background-color_1: rgb(5, 5, 5);
+$background-color_2: rgb(39, 37, 37);
+.yay {
+  height: 50000px;
+  background-color: $background-color_1;
+}
+.total {
+  color: $color_1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 5%;
+}
+.total__card-container1__full {
+  color: $color_2;
+}
+.total__card-container1 {
+  margin-top: 12%;
+  margin-left: 15%;
+  &:hover {
+    .total__card-container1__full__indcard1 {
+      transform: scale(1.1, 2);
+      border-radius: 5%;
+      width: 340px;
+      background-color: $background-color_2;
+      transition: 0.3s;
+      height: 180px;
+      margin-left: 2%;
+    }
+    .total__card-container1__full__hover-content1 {
+      display: block;
+      opacity: 1;
+      margin-top: -5%;
+      margin-left: 0%;
+      overflow: hidden;
+    }
+    .total__card-container1__full__indcard1__movie_img1 {
+      height: 86px;
+      width: 340px;
+      margin-bottom: 10%;
+    }
+    .total__card-container1__full__hover-content1__card_playbutton1 {
+      border-radius: 50%;
+      //   margin-bottom: 10%;
+      margin-right: 9%;
+      padding-top: 2%;
+
+      border: none;
+    }
+  }
+  .card-container1 {
+    &:hover {
+      position: relative;
+      border: 2px border white;
+    }
+  }
+  .total__card-container1__full__hover-content1 {
+    position: absolute;
+    width: 300px;
+    display: none;
+    opacity: 0;
+  }
+}
+.total__card-container1 {
+  &:hover {
+    .total__card-container1__full__hover-content1__card_addlist1 {
+      border-radius: 50%;
+      margin-right: 9%;
+      padding-top: 2%;
+      border: none;
+    }
+    .total__card-container1__full__hover-content1__card_like1 {
+      border-radius: 50%;
+      margin-right: 9%;
+      padding-top: 2%;
+      border: none;
+      &:hover {
+        .total__card-container1__full__hover-content1__card_like1__moreoptions {
+          margin-top: 2%;
+        }
+      }
+    }
+    .total__card-container1__full__hover-content1__card_dropdown1 {
+      border-radius: 50%;
+      margin-left: 25%;
+      padding-top: 2%;
+      border: none;
+    }
+    .total__card-container1__full__hover-content1__card_Match1 {
+      font-size: 1.2vw;
+      color: green;
+      top: 5%;
+      margin-bottom: 10%;
+      margin-right: 9%;
+    }
+    .total__card-container1__full__hover-content1__unordered1__card_ua1 {
+      font-size: 1.2vw;
+      margin-bottom: 10%;
+      margin-right: 9%;
+      color: $color_5;
+    }
+    .total__card-container1__full__hover-content1__card_duration1 {
+      font-size: 1.2vw;
+      margin-right: 5%;
+      color: $color_5;
+      display: inline;
+    }
+    .total__card-container1__full__hover-content1__unordered1 {
+      margin-top: 0%;
+      margin-left: 0%;
+      padding-left: 0;
+      display: flex;
+      gap: 12%;
+      color: $color_5;
+      .total__card-container1__full__hover-content1__unordered1__rating1 {
+        font-size: 1.2vw;
+        color: $color_5;
+        margin-bottom: 10%;
+      }
+    }
+  }
+}
